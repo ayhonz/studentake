@@ -1,5 +1,9 @@
 package home
 
+import "github.com/ayhonz/studentake/view/layout"
+
 templ Show() {
-	<h1>Hello</h1>
+	@layout.Base("Home") {
+		<h1>Hello</h1>
+	}
 }

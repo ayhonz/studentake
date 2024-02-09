@@ -1,0 +1,14 @@
+package layout
+
+templ Base(title string) {
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>{ title }</title>
+		</head>
+		<body>
+			This is the body
+			{ children... }
+		</body>
+	</html>
+}
