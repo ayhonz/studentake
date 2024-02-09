@@ -1,0 +1,10 @@
+package dashboard
+
+import "github.com/ayhonz/studentake/view/layout"
+import "github.com/ayhonz/studentake/view/component"
+
+templ Show() {
+	@layout.Base("Dashboard") {
+		@component.Todo()
+	}
+}
