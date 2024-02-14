@@ -7,8 +7,11 @@ import (
 
 func main() {
 	e := echo.New()
+	e.Static("/static", "static")
+
 	homeHandler := handler.Home{}
 	dashboard := handler.Dashboard{}
+
 	e.GET("/", homeHandler.Index)
 	e.GET("/dashboard", dashboard.ShowDashboard)
 

@@ -5,9 +5,10 @@ templ Base(title string) {
 	<html>
 		<head>
 			<title>{ title }</title>
+			<link href="static/output.css" rel="stylesheet"/>
 		</head>
 		<body>
-			This is the body
+			<h1 class="text-3xl font-bold underline">Hello There</h1>
 			{ children... }
 		</body>
 	</html>
